@@ -161,7 +161,7 @@ let pessoa = {
 
 console.log(pessoa.nomeCompleto())
 
-*/
+
 
 let frutas = [
     {cor: 'verde', qt: 5},
@@ -181,3 +181,84 @@ for(let fruta of frutas){
     console.log(`Cor da Fruta: ${fruta.cor} - Quantidade: ${fruta.qt}`)
 }
 
+
+
+// While
+
+let contador = 0
+
+while(contador < 10){
+    contador++
+    console.log(contador)
+}
+
+let fruits = ['Maça', 'Uva', 'Banana']
+
+//for(let contador = 0; contador < fruits.length; contador++){
+
+ //   console.log(fruits[contador])
+//}
+
+//for(let contador in fruits){
+  //  console.log(fruits[contador])
+//}
+
+//for(let frutas of fruits){
+  //  console.log(frutas)
+//}
+
+let contador = 1
+
+//while(contador < fruits.length){
+  //  console.log(fruits[contador])
+    //contador++
+//}
+
+while(contador <=  100){
+    console.log(contador)
+    contador++
+}
+
+let fruits = ['Maça', 'Uva', 'Laranja', 'Banana']
+
+//fruits.join(' '); //juntar
+
+fruits[fruits.length - 1] = 'PERA'
+
+fruits.pop()
+fruits.push('Pera')
+
+console.log(fruits)
+
+
+
+let fruits = ['Maça', 'Uva', 'Laranja', 'Banana']
+
+fruits.sort() // Ordem alfabética
+fruits.reverse() //sort + reverse = Ordem Z - A // Somente o REVERSE = Inverte o Array
+console.log(fruits)
+
+*/
+
+let cars = [
+    {brand: 'Fiat', year: 2022},
+    {brand: 'BMW', year:2018},
+    {brand: 'Ferrari', year: 2020},
+    {brand: 'Fusca', year:2012},
+
+]
+
+cars.sort((a, b) => {
+    if(a.year > b.year){
+        return 1;
+    } else if(a.year < b.year){
+        return -1;
+    } else{
+        return 0;
+    }
+
+    //return a.year - b.year;
+    //return b.year - a.year
+
+})
+console.log(cars)
