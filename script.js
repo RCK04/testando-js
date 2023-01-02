@@ -238,7 +238,7 @@ fruits.sort() // Ordem alfabética
 fruits.reverse() //sort + reverse = Ordem Z - A // Somente o REVERSE = Inverte o Array
 console.log(fruits)
 
-*/
+
 
 let cars = [
     {brand: 'Fiat', year: 2022},
@@ -262,3 +262,67 @@ cars.sort((a, b) => {
 
 })
 console.log(cars)
+
+*/
+
+let fruits = ['Banana', 'Laranja', 'Maça', 'Pêra']
+
+/*
+let bigFruits = fruits.filter((item) => {
+
+    return item.length > 4
+    if(item.length > 4){
+        return true
+    } else{
+        return false
+    } 
+})
+
+let ok = fruits.every((value) =>{
+    if(value.length > 3){
+        return true
+    } else{
+        return false
+    }
+});
+
+if(ok){
+    console.log('Todos são maior que 3')
+} else{
+    console.log('Naoo sao maior que 3')
+}
+
+
+
+// Every - Todos tem que satisfazer
+// Some - Se 1 satisfazer - Funciona
+
+let ok = fruits.some((value) =>{
+    if(value.length > 3){
+        return true
+    } else{
+        return false
+    }
+});
+
+if(ok){
+    console.log('Todos são maior que 3')
+} else{
+    console.log('Naoo sao maior que 3')
+}
+
+*/
+
+if(fruits.includes('Laranja')){
+    console.log('Tem Laranja SIM')
+} else{
+    console.log('Nao tem Laranja')
+}
+
+
+
+
+
+
+
+
